@@ -1,0 +1,283 @@
+/* ================== GLOBAL STYLES ================== */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+/* Buttons */
+.button1 {
+    background-color: #343333;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button1:hover {
+    transform: scale(1.10);
+}
+
+.button1:active {
+    transform: scale(0.99);
+}
+
+/* ================== HOME PAGE ================== */
+body.home {
+    background-color: #000;
+}
+
+body.home header {
+    background-color: transparent;
+    border-bottom: none;
+}
+
+/* Home links */
+a.hyperlink {
+    color: #fff;
+    text-shadow: 0 0 5px rgb(33, 32, 32);
+    text-decoration: none;
+    font-size: 15px;
+    padding: 8px 16px;
+    margin-left: 15px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+a.hyperlink:hover {
+    text-decoration: underline;
+    color: rgb(48, 126, 194);
+}
+
+/* Sections */
+.intro, .about, .learning, .knowledge, .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 40px 60px;
+    gap: 30px;
+    background-color: rgb(27, 31, 35);
+    border-radius: 16px;
+}
+
+.introtxt, .abouttxt, .learningtxt, .knowledgetxt, .contacttxt {
+    flex: 1;
+    color: #fff;
+}
+
+.imgeint, .aboutimg, .learningimg, .knowledgeimg {
+    flex: 1.2;
+    max-width: 600px;
+}
+
+.imgeint img, .aboutimg img, .learningimg img, .knowledgeimg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.contactb {
+    color: rgb(26, 163, 205);
+}
+
+/* Footer */
+.footer1 {
+    color: #fff !important;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Dark Cookie Popup */
+#cookiePopup {
+  background-color: #1B1E23;
+  color: #ffffff;
+  border: 1px solid #444;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+#cookiePopup button {
+  background-color: #2B7CFF; 
+  color: #ffffff;
+}
+
+#cookiePopup button:hover {
+  background-color: #1F5DCC;
+}
+
+/* ================== DARK MODE / GLOBAL OVERRIDES ================== */
+/* Base body dark background */
+body {
+    background-color: #1a1a1a;
+}
+
+/* Header override */
+header {
+    background-color: #1a1a1a;
+}
+
+/* Sections override */
+.absc1, .absc2, .absc3 {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Section text override */
+.absc1 .title, .absc1 .text, 
+.absc2 .title, .absc2 .text, 
+.absc3 .title, .absc3 .text {
+    color: #fff;
+}
+
+/* Footer & welcome text */
+.abwl, .footer2 {
+    color: #e9ecef;
+}
+
+/* Links */
+a.hyperlink2 {
+    color: #fff;
+    text-shadow: none;
+}
+
+a.hyperlink2:hover {
+    color: #66d9ef;
+    text-decoration: underline;
+}
+
+/* Footer fixes */
+.footer2 {
+    color: #e9ecef !important;
+}
+
+/* ================== CONTACT PAGE ================== */
+body.contact-page {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+body.contact-page header {
+    background-color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.happy {
+    width: 120px;
+    height: auto;
+}
+
+/* Links */
+a.hyperlink3 {
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 8px 16px;
+    margin-left: 15px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+a.hyperlink3:hover {
+    color: rgb(45, 188, 228);
+    text-decoration: underline;
+}
+
+/* Contact section */
+.contact-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    margin: 30px 0;
+}
+
+.contactc {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1B1E23;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.contactc h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.contactc p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer-contact {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* ================== COOKIES PAGE ================== */
+body.cookies-page {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.titelco {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Sections */
+.c1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    gap: 30px;
+    background-color: #1B1E23;
+    border-radius: 12px;
+    transition: background-color 0.5s ease;
+}
+
+.textco {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Links */
+a.hyperlink4 {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 8px 16px;
+    margin-left: 15px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+a.hyperlink4:hover {
+    color: rgb(45, 188, 228);
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer-co {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    margin-top: 40px;
+}

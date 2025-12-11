@@ -1,0 +1,328 @@
+/* ---------------- HOME PAGE ---------------- */
+body.home {
+  background-color: #DEE1E6;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-color 0.5s ease;
+}
+
+/* Home links */
+a.hyperlink {
+  color: #000000;
+  text-shadow: 0 0 5px rgb(36, 34, 34);
+  text-decoration: none;
+  font-size: 15px;
+  padding: 8px 16px;
+  margin-left: 15px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+a.hyperlink:hover {
+  text-decoration: underline;
+  color: rgb(48, 126, 194);
+}
+
+/* ---  Icon  --- */
+
+.theme-toggle-icon {
+    /* clickable icon style */
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 20px; /* Space from the last link */
+    padding: 5px;
+    line-height: 1; 
+    /* transition effect */
+    transition: transform 0.2s ease-in-out;
+}
+
+.theme-toggle-icon:hover {
+    transform: scale(1.1);
+}
+
+/* sections */
+.intro, .about, .learning, .knowledge, .contact {
+  display: flex;/* lay items in the container by distributing the space between them and aligning the items within the flexible container.*/
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 60px auto; /*top right*/
+  padding: 40px 60px;/*top right*/
+  gap: 30px;
+  background-color: #F8F9FB;
+  border-radius: 16px;/*maked the edges softer*/
+}
+
+.introtxt, .abouttxt, .learningtxt, .knowledgetxt, .contacttxt {
+  flex: 1;
+  color: rgb(0, 0, 0);
+}
+
+.imgeint, .aboutimg, .learningimg, .knowledgeimg {
+  flex: 1.2;
+  max-width: 600px;
+}
+
+.imgeint img, .aboutimg img, .learningimg img, .knowledgeimg img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: 0.3s ease-in-out;
+}
+
+.aboutimg:hover img, .imgeint:hover img, .learningimg:hover img, .knowledgeimg:hover img {
+  transform: scale(1.1); /* Scale the image */
+}
+
+.contactb{
+  color: rgb(60, 209, 254);
+}
+
+/*  footer */
+.footer1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* ---------------- ABOUT PAGE ---------------- */
+body {
+  background-color: #dee2e6;
+}
+
+/* Links */
+a.hyperlink2 {
+  color: #000000;
+  text-shadow: 0 0 5px rgb(114, 102, 102);
+  text-decoration: none;
+  font-size: 15px;
+  padding: 8px 16px;
+  margin-left: 15px;
+  border-radius: 6px;
+}
+a.hyperlink2:hover {
+  text-decoration: underline;
+  color: rgb(45, 188, 228);
+}
+
+/* Sections */
+.absc1, .absc2, .absc3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  gap: 30px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  color: rgb(0, 0, 0);
+  transition: background-color 0.5s ease;
+}
+
+/* Reverse layout 2end section (about) */
+.absc2.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Text block */
+.text-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Titles */
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+/*  text */
+.text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Images */
+.abimg1, .abimg2, .abimg3 {
+  flex: 1.2;
+  max-width: 400px;
+}
+.abimg1 img, .abimg2 img, .abimg3 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.abimg1:hover img, .abimg2:hover img, .abimg3:hover img {
+ transform: scale(1.1);
+}
+/* Welcome  */
+.abwl {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer2 {
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+
+#cookiePopup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 280px;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  display: none;
+  font-family: Arial, sans-serif;
+}
+
+#cookiePopup button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #2b7cff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* ---------------- CONTACT PAGE ---------------- */
+body.contact-page {
+  background-color: #dee2e6;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s ease;
+}
+
+body.contact-page header {
+    /* Assuming you want a white/light header on the contact page by default */
+    background-color: auto black; 
+    transition: background-color 0.5s ease; /* Add transition here */
+}
+.happy{
+  height: auto;
+  width: 120px;
+}
+/*hoi*/
+
+a.hyperlink3 {
+  color: #000000;
+  text-shadow: 0 0 5px rgb(114, 102, 102);
+  text-decoration: none;
+  font-size: 15px;
+  padding: 8px 16px;
+  margin-left: 15px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+a.hyperlink3:hover {
+  text-decoration: underline;
+  color: rgb(45, 188, 228);
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.contactc {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.contactc h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+/* Makes the p somller */
+.contactc p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.footer-contact {
+  text-align: center;
+  padding: 20px;
+  background-color: #dee2e6;
+  color: #000000;
+  margin-top: 40px;
+}
+/* ---------------- COOKIES PAGE ---------------- */
+body.cookies-page {
+  background-color: #dee2e6;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s ease;
+}
+.titelco{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Sections */
+.c1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  gap: 30px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  color: rgb(0, 0, 0);
+  transition: background-color 0.5s ease;
+}
+.textco{
+  color: black;
+  font-size: 16px;
+}
+
+a.hyperlink4 {
+  color: #000000;
+  text-shadow: 0 0 5px rgb(114, 102, 102);
+  text-decoration: none;
+  font-size: 15px;
+  padding: 8px 16px;
+  margin-left: 15px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+a.hyperlink3:hover {
+  text-decoration: underline;
+  color: rgb(45, 188, 228);
+}
+.footer-co{
+  text-align: center;
+  padding: 20px;
+  color: #000000;
+  margin-top: 40px;
+}
