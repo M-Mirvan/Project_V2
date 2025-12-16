@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* ========== COOKIE POPUP ========== */
-    const DEMO_MODE = true;  // true to yes and false to no (demo for the demonstration) othgerwise cookies dosent work because of localStorage
+    const DEMO_MODE = true;  // true to yes and false to no (demo for the demonstration) otherwise cookies dosent work because of localStorage
 
     const popup = document.getElementById("cookiePopup");
     const acceptBtn = document.getElementById("acceptCookies");
@@ -31,3 +31,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+// Toon begroeting
+//hallo ik ben Mervan ik ben cool//
+function Greeting() {
+        const now = new Date();
+        const hour = now.getHours();
+
+        if (hour >= 5 && hour < 12) {
+            return "Good Morning!";
+        } else if (hour >= 12 && hour < 18) {
+            return "Good Afternoon!";
+        } else {
+            return "Good Evening!";
+        }
+    }
+
+    // Display greeting
+    document.getElementById("greetingText").textContent = Greeting();
+
+    // Close greeting box
+    function closeGreeting() {
+        const box = document.getElementById("greetingBox");
+        box.style.display = "none";
+    }
+        // sidebar
+        function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
