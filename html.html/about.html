@@ -9,19 +9,33 @@
   <link rel="stylesheet" href="/css.css/dark-mode.css" id="dark-theme-link" disabled>
 </head>
 <body class="about3">
-  <script src="/script.js/scrip.js"></script> 
-
-  <header> 
-    <img class="happy" src="/pic/happy.png" alt="Logo">
+<!-- greeting -->
+<div id="greetingBox" class="greeting-box">
+    <span id="greetingText" class="greeting-text"></span>
+    <button class="close-btn" onclick="closeGreeting()">X</button>
+</div>
+ <img class="happy" src="/pic/happy.png" alt="Logo">
     <nav>
-      <a class="hyperlink2" href="/html.html/index.html">Home</a>
-      <a class="hyperlink2" href="/html.html/about.html">About</a>
-      <a class="hyperlink2" href="/html.html/contact.html">Contact</a>
-      <a class="hyperlink2" href="/html.html/cokies.html">cookies</a>
-      <span class="theme-toggle-icon hello1" role="button" aria-label="Toggle dark/light theme">🌙</span> 
+  <header> 
+    <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="/html.html/index.html">Home</a>
+  <a href="/html.html/about.html">About</a>
+  <a href="/html.html/contact.html">contact</a>
+  <a href="/html.html/cokies.html">cookies</a>
+ 
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+  </div>
+
+
+     
+      
     </nav>
   </header>
-<p class="abwl">HI IM Mirvan</p>
+<p class="abwl">HI IM Mirvan <span class="theme-toggle-icon hello1" role="button" aria-label="Toggle dark/light theme">🌙</span> </p>
 
 <!-- About Me -->
 <section class="absc1">
@@ -43,9 +57,8 @@
    <br><br>
     <p class="text">
     My hobbies include <strong>reading books</strong>, watching YouTube videos about <strong>PC building</strong> (even though I have never built one myself), and sometimes <strong>drawing</strong>. I am excited about this new learning phase in my life, and this is who I am: Mirvan.
-    </p>
 
-    </p>
+      
 
   </div>
   <div class="abimg2">
@@ -74,6 +87,6 @@
   <p>This website uses cookies to ensure you get the best experience.</p>
   <button id="acceptCookies">Accept</button>
 </div>
-
+  <script src="/script.js/scrip.js"></script> 
 </body>
 </html>
