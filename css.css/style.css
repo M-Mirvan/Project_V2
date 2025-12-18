@@ -94,6 +94,27 @@ body.home {
   padding: 16px;
 }
 
+/* countdwon*/
+
+#countdown {
+  text-align: center;
+  color: black;
+}
+
+#timer {
+  display: flex;
+  justify-content: center;
+}
+
+#timer div {
+  margin: 0 10px;
+}
+
+#timer span {
+  display: block;
+  font-size: 24px;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
@@ -254,7 +275,7 @@ a.hyperlink2:hover {
   height: auto;
   object-fit: cover;
   border-radius: 8px;
-    transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .abimg1:hover img, .abimg2:hover img, .abimg3:hover img {
